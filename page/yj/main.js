@@ -7,54 +7,12 @@ window.onload = function() {
     var fullsound = document.querySelector(".backgroundmusic")
     
     title.classList.add ('scale');
-
-   
-    // element.classList.
-    
-    // 클릭 이벤트 처리
-//     document.addEventListener("scroll", function() {
-//       // 요소를 사라지게 함
-//       if (window.scrollY > 50) {
-//         element.classList.add("hidden");
-//       }
-//       else {
-//         element.classList.remove("hidden");
-//       }
-//     //   element.style.display = "none";
-//     });
-//   };
-
-//   window.addEventListener('scroll', function(){
-//     console.log('info')
-//   });
 element.addEventListener("click", function() {
-    // 요소를 사라지게 함
 
     element.classList.add("hidden");
     fullsound.play();
-
-  //   element.style.display = "none";
   });
 };
-
-
-
-//   // 페이지가 로드될 때 실행되는 함수
-// window.onload = function() {
-//     var element = document.getElementById("info");
-  
-//     // 스크롤 이벤트 감지
-//     window.addEventListener("scroll", function() {
-//       // 요소가 화면 위쪽으로 스크롤되면 투명하게 함
-//       if (window.scrollY > 100) { // 이 값은 스크롤 위치에 따라 조정 가능
-//         element.style.opacity = "0";
-//       } else {
-//         // 스크롤이 다시 위쪽으로 올라오면 다시 보이게 함
-//         element.style.opacity = "1";
-//       }
-//     });
-//   };
-  
 
 
 
@@ -81,7 +39,6 @@ const doorfail3 = document.getElementById('door__fail3');
 
 
 const hidden = document.querySelector("hidden");
-console.log(door1);
 
 const sound = document.querySelector(".buttonsound");
 const endsound = document.querySelector(".buttonsound_2");
@@ -119,8 +76,6 @@ door6.addEventListener("click",function() {
 })
 door7.addEventListener("click",function() {
     sound.play();
-    // door7.classList.add ('hidden');
-    // door8.classList.remove ('hidden');
 })
 door8.addEventListener("click",function() {
     sound.play();
