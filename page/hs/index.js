@@ -70,7 +70,7 @@ function submitPassword() {
 
 function updatePasswordInput() {
     document.getElementById('password-input').value = password;
-    document.getElementById('website-link').setAttribute('href', 'https://www.youtube.com'); // 다음 분  웹사이트 링크
+    document.getElementById('website-link').setAttribute('href', '../ksm/index.html'); // 다음 분  웹사이트 링크
     document.getElementById('password-value').innerText = password;
 }
 

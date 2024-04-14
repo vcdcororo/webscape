@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
             // 새로운 div 생성
             let newDiv = document.createElement('span');
             newDiv.id = "next-link"
-            newDiv.innerHTML = "<a href=`#`>이동하세요!</a>";
+            newDiv.innerHTML = `<a href="../gsm/index.html">이동하세요!</a>`;
             
             document.getElementById('randomText').appendChild(newDiv);
         }
