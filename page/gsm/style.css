@@ -1,0 +1,353 @@
+@font-face {
+    font-family: 'NeoDunggeunmoPro-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/NeoDunggeunmoPro-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0%;  
+    padding: 0;
+    background-color: #121212;
+    font-family: 'NeoDunggeunmoPro-Regular';
+}
+
+.container {
+    display: grid;
+    place-items: center; /* 수직 및 수평으로 가운데 정렬 */
+    width: 100vw; /* 전체 화면 너비 */
+    height: 100vh; /* 전체 화면 높이 */
+}
+
+.quest {
+    display: grid;
+    place-items: center;
+    text-align: center;
+    margin: auto;
+    position: absolute;
+    border-radius: 10px;
+    border: 1px solid white;
+    padding: 60px;
+    width: 1000px; 
+
+    /* 가로 및 세로 중앙정렬 */
+    left: 50%; 
+    top: 50%; 
+    transform: translate(-50%, -50%); 
+
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    font-size: 20pt;
+    line-height: 30pt;
+    z-index: 9998; 
+}
+
+.quest img {
+    padding:40px
+}
+
+#complete {
+    display: none; /* 초기에는 숨겨진 상태로 설정 */
+}
+
+.event {
+    margin: auto;
+    position: absolute;
+    border-radius: 10px;
+    border: 1px solid white;
+    padding: 60px;
+    width: 1400px; 
+
+    /* 중앙정렬 */
+    left: 50%; 
+    transform: translateX(-50%); 
+
+    bottom: 40px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    font-size: 20pt;
+    line-height: 30pt;
+    display: none; /* 초기에는 숨겨진 상태로 설정 */
+    z-index: 9998; 
+}
+
+.clicks {
+    position: absolute;
+    width: 1920px;
+    height: 1080px;
+}
+
+.subtitle {
+    margin-bottom: 20px;
+}
+
+.clickPoint {
+    position: absolute;
+    /* background-color: rgba(255, 0, 0, 0.5); /* 빨간색, 불투명도 50% */
+    transform: translate(-50%, -50%)
+}
+
+#clickPoint01 {
+    /* 내선전화 */
+    left: 153px;
+    top: 813px;
+    width: 306px;
+    height: 246px;
+    z-index: 2;
+}
+
+#clickPoint02 {
+    /* 인공눈물 박스 */
+    left: 274px;
+    top: 736px;
+    width: 142px;
+    height: 120px;
+    z-index: 3;
+}
+
+#clickPoint03 {
+    /* 헤어롤 */
+    left: 356px;
+    top: 820px;
+    width: 106px;
+    height: 87px;
+    z-index: 5;
+}
+
+#clickPoint04 {
+    /* 콜라맛 사탕 */
+    left: 292px;
+    top: 835px;
+    width: 39px;
+    height: 50px;
+    z-index: 3;
+}
+
+#clickPoint05 {
+    /* 포스트잇 */
+    left: 389px;
+    top: 787px;
+    width: 105px;
+    height: 45px;
+    z-index: 4;
+}
+
+#clickPoint06 {
+    /* 책 */
+    left: 496px;
+    top: 723px;
+    width: 193px;
+    height: 125px;
+    z-index: 3;
+}
+
+#clickPoint07 {
+    /* 와사비맛 완두콩 */
+    left: 533px;
+    top: 651px;
+    width: 89px;
+    height: 114px;
+    z-index: 4;
+}
+
+#clickPoint08 {
+    /* 휴지 */
+    left: 643px;
+    top: 646px;
+    width: 141px;
+    height: 191px;
+    z-index: 2;
+}
+
+#clickPoint09 {
+    /* 명함 케이스 */
+    left: 687px;
+    top: 727px;
+    width: 85px;
+    height: 55px;
+    z-index: 3;
+}
+
+#clickPoint10 {
+    /* 차 */
+    left: 765px;
+    top: 748px;
+    width: 105px;
+    height: 162px;
+    z-index: 4;
+}
+
+#clickPoint11 {
+    /* 종이 더미 */
+    left: 984px;
+    top: 691px;
+    width: 344px;
+    height: 57px;
+    z-index: 3;
+}
+
+#clickPoint12 {
+    /* 달력 */
+    left: 783px;
+    top: 607px;
+    width: 87px;
+    height: 90px;
+    z-index: 2;
+}
+
+#clickPoint13 {
+    /* 돼끼 */
+    left: 863px;
+    top: 595px;
+    width: 72px;
+    height: 115px;
+    z-index: 2;
+}
+
+#clickPoint14 {
+    /* 거울 */
+    left: 971px;
+    top: 602px;
+    width: 107px;
+    height: 125px;
+    z-index: 2;
+}
+
+#clickPoint15 {
+    /* 농담곰 */
+    left: 1066px;
+    top: 603px;
+    width: 87px;
+    height: 96px;
+    z-index: 2;
+}
+
+#clickPoint16 {
+    /* 명함들 */
+    left: 1149px;
+    top: 627px;
+    width: 63px;
+    height: 49px;
+    z-index: 1;
+}
+
+#clickPoint17 {
+    /* 디퓨저 */
+    left: 1238px;
+    top: 598px;
+    width: 40px;
+    height: 182px;
+    z-index: 3;
+}
+
+#clickPoint18 {
+    /* 렌즈 용액 */
+    left: 1268px;
+    top: 662px;
+    width: 49px;
+    height: 127px;
+    z-index: 4;
+}
+
+#clickPoint19 {
+    /* 클립 */
+    left: 1250px;
+    top: 727px;
+    width: 65px;
+    height: 32px;
+    z-index: 3;
+}
+
+#clickPoint20 {
+    /* 이쑤시개 */
+    left: 1445px;
+    top: 735px;
+    width: 62px;
+    height: 82px;
+    z-index: 3;
+}
+
+#clickPoint21 {
+    /* 향수 */
+    left: 1459px;
+    top: 750px;
+    width: 35px;
+    height: 81px;
+    z-index: 4;
+}
+
+#clickPoint22 {
+    /* 종이컵 */
+    left: 1529px;
+    top: 700px;
+    width: 113px;
+    height: 214px;
+    z-index: 3;
+}
+
+#clickPoint23 {
+    /* 거치대 */
+    left: 1701px;
+    top: 749px;
+    width: 436px;
+    height: 459px;
+    z-index: 1;
+}
+
+#clickPoint24 {
+    /* 아이패드 */
+    left: 1749px;
+    top: 653px;
+    width: 341px;
+    height: 191px;
+    z-index: 4;
+}
+
+#clickPoint25 {
+    /* 책꽂이 */
+    left: 1397px;
+    top: 574px;
+    width: 334px;
+    height: 315px;
+    z-index: 2;
+}
+
+#clickPoint26 {
+    /* 키보드 */
+    left: 1042px;
+    top: 743px;
+    width: 288px;
+    height: 63px;
+    z-index: 5;
+}
+
+#clickPoint27 {
+    /* 마우스 */
+    left: 1335px;
+    top: 827px;
+    width: 86px;
+    height: 79px;
+    z-index: 1;
+}
+
+#clickPoint28 {
+    /* 보조 모니터 */
+    left: 342px;
+    top: 497px;
+    width: 684px;
+    height: 441px;
+    z-index: 1;
+}
+
+#clickPoint29 {
+    /* 메인 모니터 */
+    left: 959px;
+    top: 389px;
+    width: 584px;
+    height: 402px;
+    z-index: 1;
+}
+
+
+
+

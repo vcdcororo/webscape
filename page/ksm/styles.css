@@ -1,0 +1,229 @@
+body{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    
+    background-image: url('윈도우_page-0001.jpg'); /* 이미지 경로를 실제 이미지 파일의 경로로 변경하세요 */
+    background-size: cover; /* 배경 이미지를 화면에 가득 차게 설정 */
+    background-position: center; 
+    
+    background-repeat: no-repeat; /* 배경 이미지 반복 없음 */
+   
+    height: 100vh; /* 화면 높이를 100%로 설정 */
+    width: 100vw; /* 화면 */
+     
+overflow: hidden;
+}
+html {
+    margin: 0;
+    padding: 0;
+}
+.centered-image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.house {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width:82%; /* 이미지의 너비 조절 */
+    height: 82%; 
+}
+a { 
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   
+}
+button {
+    position: absolute;
+    padding: 45px 30px; 
+    top: 80%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    border: 2px solid rgba(0, 123, 255, 0);}
+
+.tooltip {
+    position: absolute;
+    display: none;
+    background-color: rgba(255, 38, 38, 0.7);
+    color: white;
+    padding: 5px;
+    border-radius: 40px;
+    z-index: 999; /* 다른 요소 위에 표시되도록 z-index 설정 */
+}
+
+.tooltip-black {
+    position: absolute;
+    display: none;
+    background-color:#000;
+    color:#fff719;
+    padding: 5px;
+    border-radius: 40px;
+}
+.newimage {
+    position: absolute;
+    
+   
+    bottom: 10%; /* 하단에서 10% 지점에 위치 */
+    left: 50%; /* 가운데 정렬을 위해 left: 50% 설정 */
+    transform: translate(-50%, -50%);
+    
+ }
+ 
+.eye {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+.ball{
+    position: absolute;
+    top: 38%;
+    left: 132%;
+    transform: translate(-50%, -50%);
+    
+    width: 200%; /* 이미지의 너비 조절 */
+    height: 100%; 
+
+}
+.mush{
+
+    position: absolute;
+    top: -6cqw;
+    left: 3%;
+    
+    
+    width:auto; /* 이미지의 너비 조절 */
+    height: 100%; 
+}
+.rab{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    
+    
+    width:auto; /* 이미지의 너비 조절 */
+    height: 100%; 
+
+}
+.mushh{
+    position: absolute;
+    top: 33%;
+    left: 105%;
+    
+    
+    width:100%; /* 이미지의 너비 조절 */
+    height: 85%; 
+    
+
+
+
+}
+.rain{
+    position: absolute;
+    top: -23%;
+    left: 115%;
+    
+    
+    width:80%; /* 이미지의 너비 조절 */
+    height: 110%; 
+
+
+}
+.doll{
+
+    position: absolute;
+    top: 45%;
+    left: -5%;
+    
+    
+    width:auto; /* 이미지의 너비 조절 */
+    height: 60%; 
+}
+.diagonal-text-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+   
+        cursor: zoom-in;
+    
+ 
+    padding: 8px; /* 텍스트 주변 간격 조절 */
+   /* 테두리 둥글게 조절 */
+}
+.diagonal-text {
+    position: absolute;
+   
+    color: rgb(0, 0, 0);
+   
+     /* 적절한 폰트 크기로 조절 */
+    white-space: nowrap;
+}
+.text1 {
+    position: absolute;
+    top: 10%;
+    left: 44%;
+    font-size: 20px;
+}
+
+.text2 {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    font-size: 18px;
+     /* 다른 스타일을 적용 */
+}
+
+.text3{
+    position: absolute;
+    top: 30%;
+    left: -30%;
+    font-size: 18px;
+}
+.text4{
+
+    position: absolute;
+    top: 80%;
+    left: -30%;
+    font-size: 18px;
+}
+.text5{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 25px;
+    color: rgb(249, 45, 45); 
+
+}
+#moveButton{
+
+
+    position: absolute;
+    padding: 45px 30px; 
+    top: 80%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    border: 2px solid rgba(5, 15, 26, 0);
+}
+
+
+#moveToOtherSite {
+   
+    z-index: 2; /* 다른 요소 위에 위치하도록 설정 */
+    position: relative;
+    top: 10%;
+    left: 45%;
+   color: #00000000;
+    
+   
+}

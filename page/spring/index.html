@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>webescape</title>
+    <link rel="stylesheet" href="./css/normalizecursur.css" />
+    <link rel="stylesheet" href="./css/stylecursur.css" />
+    <script>
+      function checkPassword(event) {
+          if (event.keyCode === 13) { // Enter 키의 keyCode는 13입니다.
+              var password = document.getElementById("password").value;
+
+              // 비밀번호 확인 로직을 구현합니다.
+              if (password === "orange"|| password === "Orange" || password === "ORANGE") {
+                  window.location.href = "../password.html"; // 정답일 때 새로운 페이지로 이동합니다.
+              } else {
+                  alert("땡");
+              }
+          }
+      }
+  
+  </script>
+
+  </head>
+  <body>
+    <div class="passwordinput">
+      <h2 password2>+ 숨겨진 비밀번호를 찾아 입력하시오 +</h2>
+    <input type="password" id="password" onkeydown="checkPassword(event)">
+    </div>
+
+    <div class="hint1"> 
+      <p>
+      힌트: 비밀번호는 6글자이다
+    </p>
+  </div>
+
+  <div class="hint2"> 
+    <p>
+    힌트: 비밀번호는 알파벳으로만 이루어져 있다
+  </p>
+</div>
+
+<div class="o">
+  <p>
+    o
+  </p>
+</div>
+<div class="r">
+  <p>
+    r
+  </p>
+</div>
+<div class="a">
+  <p>
+    a
+  </p>
+</div>
+<div class="n">
+  <p>
+    n
+  </p>
+</div>
+<div class="g">
+  <p>
+    g
+  </p>
+</div>
+<div class="e">
+  <p>
+    e
+  </p>
+</div>
+
+
+
+    <div id="hiddenImg">
+  
+    </div>
+
+
+ 
+     <script src="./js/scriptcursur.js"></script>
+     
+  </body>
+</html>

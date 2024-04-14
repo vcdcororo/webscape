@@ -1,0 +1,59 @@
+#website1 {
+    background-image: url('qh.jpg');
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-repeat: no-repeat;
+    height: 200vh; /* 예시로 150%로 설정 */
+    width: 100%;
+    
+}
+.cloud {
+    position: relative;
+    }
+    .cc
+    {
+        position: absolute;
+        top: 0%;
+        left: 50%;
+        width: 180vh;
+        
+    }
+    .bb{
+
+        position: absolute;
+        top: 50%;
+        left: 70%;
+        width: 90vh;
+        
+    }
+    .aa{
+        position: absolute;
+        top: 80%;
+        left: 30%;
+        width: 180vh;
+        transform: translateX(-3%); /* 가로 방향으로 -50% 이동 */
+    }
+
+    
+    .custom-tooltip {
+        position: fixed;
+        display: none;
+        background-color: rgba(255, 38, 38, 0.7);
+        color: white;
+        padding: 8px;
+        border-radius: 10px;
+        width: auto;
+        max-width: 300px;
+        text-align: center;
+        white-space: nowrap;
+        z-index: 9999;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+      

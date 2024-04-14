@@ -1,0 +1,151 @@
+
+@font-face {
+  font-family: 'DOSSaemmul';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_eight@1.0/DOSSaemmul.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+	font-family: 'DOSSaemmul';
+}
+
+
+#hiddenImg {
+  background-image: url(../img/비밀번호배경2.jpg);
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  cursor: none;
+}
+
+
+#hiddenImg::after {
+  content: "";
+
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(../img/검은배경.jpg);
+  background-size: cover;
+
+  z-index: 2;
+
+  -webkit-mask-repeat: no-repeat no-repeat;
+  mask-repeat: no-repeat no-repeat;
+
+  -webkit-mask-image: radial-gradient(
+    /* 크기는 100px, 위치는 --x, --y값, 이 값은 마우스 커서 위치값 (js 파일의 18,19행 참고) */
+      10vw at var(--x) var(--y),
+    /* 원의 바깥 그라디언트, 100%이면 깔끔한 외곽선, 0%는 블러 효과 */
+      transparent 100%,
+    /* 원의 중심 그라디언트 */ rgb(0, 0, 0) 100%
+  );
+
+ 
+  mask-image: radial-gradient(
+    190px at var(--x) var(--y),
+    transparent 100%,
+    black 100%
+  );
+}
+
+
+
+.passwordinput {
+  z-index: 3;
+  position: absolute;
+  top: 45%;
+  left: 40%;
+  text-align: center;
+  color: white;
+
+}
+
+.password2{
+ font-size: 17px;
+}
+
+.hint1 {
+  z-index: 3;
+  position: fixed;
+  top: 30%;
+  left: 5%;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-size: 17px;
+
+}
+
+.hint2 {
+  z-index: 3;
+  position: fixed;
+  top: 85%;
+  left: 45%;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-size: 17px;
+
+}
+
+.o {
+  z-index: 3;
+  position: fixed;
+  top: 25%;
+  left: 25%;
+  color: rgb(0, 0, 0);
+  font-size: 80px;
+
+}
+
+.r {
+  z-index: 3;
+  position: fixed;
+  top: 65%;
+  left: 15%;
+  color: rgb(0, 0, 0);
+  font-size: 80px;
+
+}
+
+.a {
+  z-index: 3;
+  position: fixed;
+  top: 11%;
+  left: 65%;
+  color: rgb(0, 0, 0);
+  font-size: 80px;
+
+}
+
+.n {
+  z-index: 3;
+  position: fixed;
+  top: 35%;
+  left: 85%;
+  color: rgb(0, 0, 0);
+  font-size: 80px;
+
+}
+
+.g {
+  z-index: 3;
+  position: fixed;
+  top: 75%;
+  left: 65%;
+  color: rgb(0, 0, 0);
+  font-size: 80px;
+
+}
+
+.e {
+  z-index: 3;
+  position: fixed;
+  top: 65%;
+  left: 75%;
+  color: rgb(0, 0, 0);
+  font-size: 80px;
+
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    
+    <meta charset="UTF-8">
+    <title>이상한 나라</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        
+        <div class="centered-image">
+          
+         <img src="진진그림자.png" alt="새로운 이미지" class="centered-image new-image"> 
+               <img src="집집 2.png" alt="Your Image"class="centered-image house" onmouseover="displayTooltip(this, 'Not here')">
+               
+          <div class="tooltip" id="myTooltip"></div>
+         
+         
+        </div> 
+         
+        <a href="2.html" target="_blank">   
+            <button id="myButton"></button>
+            
+            <div class="tooltip-black" id="myTooltipBlack">find me</div>
+        </a>
+        </div>
+        <script>
+            var button = document.getElementById('myButton');
+var tooltip = document.getElementById('myTooltip');
+var tooltipBlack = document.getElementById('myTooltipBlack');
+
+button.addEventListener('mouseover', function() {
+    tooltip.style.display = 'block';
+    tooltipBlack.style.display = 'block';
+});
+
+button.addEventListener('mouseout', function() {
+    tooltip.style.display = 'none';
+    tooltipBlack.style.display = 'none';
+});
+
+
+function displayTooltip(element, message) {
+    var tooltip = document.createElement('div');
+    tooltip.className = 'tooltip';
+    tooltip.innerHTML = message;
+
+    document.body.appendChild(tooltip);
+
+    // 마우스의 위치에 따라 툴팁을 이동
+    document.onmousemove = function (e) {
+        var x = e.pageX;
+        var y = e.pageY;
+
+        tooltip.style.display = 'block';
+        tooltip.style.top = (y + 10) + 'px';
+        tooltip.style.left = (x + 10) + 'px';
+    };
+
+    // 마우스가 요소를 벗어날 때 툴팁을 숨김
+    element.onmouseout = function () {
+        document.body.removeChild(tooltip);
+    };
+}
+        </script>
+    </body>
+
+</html>

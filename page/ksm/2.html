@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>어디를 보는거야</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+<button id="moveToOtherSite">다른 사이트로 이동</button>
+
+<div class="eye">
+    <img src="./cloudeye.png" alt="" class="eye ball" data-tooltip="tooltip-ball">
+    <img src="./qjtjttjt.png" alt="" class="eye mush" data-tooltip="tooltip-mush">
+    <img src="./rock.png" alt="" class="eye doll" data-tooltip="tooltip-doll">
+    <img src="./bow.png" alt="" class="eye rain" data-tooltip="tooltip-rain"> 
+    <img src="./rabb.png" alt="" class="eye rab" data-tooltip="tooltip-rab">
+    <img src="./mush2.png" alt="" class="eye mushh" data-tooltip="tooltip-mushh">
+</div>
+
+<div class="diagonal-text-container">
+    <div class="diagonal-text text1">
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;R<br>
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A<br>
+        &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;I<br>
+        &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;N<br>
+        &nbsp; &nbsp;&nbsp;&nbsp; B<br>
+        &nbsp;&nbsp; O<br>
+        W<br>
+    </div>
+    <div class="diagonal-text text2">don't eat</div>  
+    <div class="diagonal-text text3">
+        d<br>o<br>n<br>'<br>t<br>e<br>a<br>t&nbsp;&nbsp; d<br>&nbsp;&nbsp;&nbsp;&nbsp;o<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;n<br>&nbsp;&nbsp;&nbsp;&nbsp;'<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;t<br>&nbsp;&nbsp;&nbsp;&nbsp;e<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;a<br>&nbsp;&nbsp;&nbsp;&nbsp;t
+    </div>  
+    <div class="diagonal-text text4">
+        what's <br>&nbsp;&nbsp;inside?
+    </div>
+    <div class="diagonal-text text5"></div>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // 이미지 클릭 이벤트 리스너 설정
+        document.querySelectorAll('.eye').forEach(function (img) {
+            img.addEventListener('click', function () {
+                // 이미지 파일 경로 가져오기
+                var src = this.getAttribute('src');
+                
+                // PNG인지 확인
+                if (src.toLowerCase().endsWith('.png')) {
+                    // PNG이면 오류 메시지 표시
+                    alert('This is not the way.');
+                }
+            });
+        });
+
+        // 다른 사이트로 이동하는 버튼에 대한 클릭 이벤트 리스너 설정
+        document.getElementById('moveToOtherSite').addEventListener('click', function () {
+            // 다른 사이트로 이동하는 코드
+            window.location.href = 'http://127.0.0.1:5500/3.html'; 
+        });
+    });
+</script>
+
+</body>
+</html>

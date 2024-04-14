@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CORORO WeBscape</title>
+
+    <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    <!--MESSAGE02: DRAG BACKGROUND-->
+    <img id="logo" src="./assets/logo.svg" alt="">
+    <img id="WeBscape" src="./assets/WeBscape.svg" alt="">
+    <div class="inner">
+        <iframe src="https://nosignificant.netlify.app/" frameborder="0"></iframe>
+        <!-- 
+            https://sh-escape.netlify.app/ 성훈
+            https://door--cororo-tndus.netlify.app/ 수연
+            https://nosignificant.netlify.app/ 민제
+            ./page/hj/index.html 환준
+            ./page/cs/index.html 채선
+            ./page/gsm/index.html 고수민
+            ./page/hs/index.html 현상
+            ./page/jsm/index.html 솔미
+            ./page/spring/index.html 봄
+            ./page/ksm/index.html 권수민
+            -->
+
+        <img id="reset" src="./assets/reset.svg" alt="">
+    </div>
+    <div id="mobile">
+        <h1>넓은 화면으로 접속해주세요:D</h1>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            let refreshButton = document.getElementById('reset');
+
+            refreshButton.addEventListener('click', function() {
+                window.location.reload();
+            });
+        });
+
+    </script>
+</body>
+</html>
